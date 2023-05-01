@@ -1,9 +1,11 @@
-import {Action, configureStore, ThunkAction} from '@reduxjs/toolkit';
+import {configureStore} from '@reduxjs/toolkit';
 import editorReducer from '../reducers/editor';
+import newTaskReducer from '../reducers/newTask';
 
 export const store = configureStore({
     reducer: {
-        editor: editorReducer
+        editor: editorReducer,
+        newTask: newTaskReducer,
     },
 });
 

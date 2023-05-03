@@ -1,6 +1,6 @@
 import {Box} from "@mui/material";
 import Sidebar from "./sidebar";
-import NewTask from "../task-manager/newTask";
+import DraftEditor from "../editor/editor";
 
 export default function Home() {
     return (
@@ -9,7 +9,7 @@ export default function Home() {
                 <Sidebar/>
             </Box>
             <Box sx={{width: '80%', height: '100%', ml: 2}}>
-                <NewTask/>
+                <DraftEditor/>
             </Box>
         </Box>
     )
